@@ -27,7 +27,7 @@ public class TaskServiceTest {
     }
 
     @Test
-+    public void testGetTaskById() {
+    public void testGetTaskById() {
         Task task = new Task(1L, "Ser millonario", false);
         when(taskRepository.findById(1L)).thenReturn(Optional.of(task));
 
